@@ -5,7 +5,7 @@
 .header{
     min-height: 100vh;
     min-width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(clone/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./assets/img/banner.png);
     background-position:center;
     background-size: cover;
     position:relative;
@@ -317,7 +317,7 @@ nav img{
     width: 80% auto;
     text-align: center;
     margin: 100px;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(clone/about.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./assets/img/about.jpg);
     background-position: center;
     background-size:cover;
     border-radius: 10px;
