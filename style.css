@@ -1,14 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Poppins';
+
 }
+
 .header{
     min-height: 100vh;
     min-width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./assets/img/banner.png);
     background-position:center;
     background-size: cover;
+    background-attachment: fixed;
     position:relative;
+    
+}
+.header2{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./assets/img/about-bg.jpeg);
+    background-position:center;
+    background-size: cover;
+    position:relative;
+    background-attachment: fixed;
     
 }
 
@@ -30,7 +44,7 @@ nav img{
  
 .nav-links{
     flex: 2;
-    text-align: right;
+    text-align: center;
     margin-left: 10%;
     
 }
@@ -66,15 +80,29 @@ nav img{
     width: 100%;
     
 }
+.social-icons i{
+    transition: 0.5s  ease-in-out ;
+   
+}
+.social-icons i:hover{
+   scale: 130%;
+    position:initial;
+    color: red;
+    transition: 0.2s  ease-in-out  ;
+    animation-direction: reverse;
+
+}
 
 .welcome{
+    margin: auto;
     width: 100%;
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     font-family: 'Poppins';
+    display: inline-block;
     
     
     
@@ -83,21 +111,38 @@ nav img{
 
 .welcome h1 {
     color:honeydew;
+    border-right: 5px solid orange;
     font-size: 50px;
     font-family: 'Poppins';
     cursor: pointer;
-    padding: 1% 15%;
+    margin: auto;
     text-shadow: 2px 3px rgb(7, 5, 5);
+    overflow: hidden;
+  white-space: nowrap;
+  animation: typing 10s steps(60, end) infinite,
+  blink-caret .5s step-end infinite;
+
     
     
     
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 65% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 .welcome p {
+    padding: 5%;
     color: rgb(241, 238, 238);
-    margin: 20px 0 30px;
+    margin: 50px 0 80px;
     font-size: 17px;
     font-family: 'Poppins';
-    background-color: rgba(12, 2, 2, 0.253)
+    background-color: rgba(226, 170, 26, 0.253)
+
     
 }
 .contact-btn {
@@ -178,6 +223,7 @@ nav img{
 }
 
 .campus{
+    background-color: rgb(20, 68, 86);
     width: 100%;
     text-align: center;
     margin: auto;
@@ -189,6 +235,7 @@ nav img{
 }
 
 .campus h1{
+    color: aliceblue;
     font-size: 40px;
     padding-bottom: 20px
 }
@@ -240,21 +287,18 @@ nav img{
 
 }
 .facilities{
+    background-color: azure;
     width: 100%;
     text-align: center;
     margin: auto;
-    padding-top: 0px;
-    padding-bottom: -10%;
+    padding: 5% 0;
     font-family: 'Poppins';
     align-items: center;
-    margin-bottom: -30%;
     
 }
 .facilities-col{
     flex-basis: 32%;
     text-align: left;
-    
-    margin-bottom: 30%;
     position: relative;
     overflow: hidden;
 }
@@ -276,15 +320,18 @@ nav img{
     font-size: 18px;
 }
 .comments {
+    background-color: rgb(212, 174, 19);
     width: 100%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     font-family: 'Poppins';
    
     
 }
 .comments h1{
+    color: azure;
     margin-top: 80px;
     font-size: 40px;
 }
@@ -321,15 +368,18 @@ nav img{
     background-position: center;
     background-size:cover;
     border-radius: 10px;
-    padding: 100px;
+    padding: 30px;
     font-family: 'Poppins';
 }
 .contact h1{
-    padding-bottom: 5%;
+    padding: 20px;
     font-size: 40px;
     color: white;
     
     
+}
+.contact a{
+    margin: 20%;
 }
 .footer {
     width: 100% auto;
@@ -342,4 +392,46 @@ nav img{
 
 }
 
+@media  (min-width: 350px) and (max-width:950px) {
+    .contact{
+        width: 90% auto;
+        margin: 30px;
+
+    }
+    .contact h1{
+        padding-bottom: 5%;
+        font-size: 20px;
+    }
+    .row{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .welcome h1{
+        text-align: center;
+        line-height: 2;
+        padding: 5%;
+        border:none;
+        overflow:visible;
+        text-align: center;
+        white-space:unset;
+        font-size: 2rem;
+        position:initial;
+        animation: none;
+        
+     
+    }
+   
+      
+    .welcome{
+       align-items: center;
+        margin: auto;
+        width: 100%;
+    text-align: center;
+    font-family: 'Poppins';
+    /* display: inline-block; */
+    }
+    
+}
 

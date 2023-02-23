@@ -1,0 +1,136 @@
+.first-con{
+    margin: 10%;
+    display: flex;
+    justify-content:space-around;
+}
+h2{
+    font-size: 30px;
+}
+
+.first-con h1{
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.side-text{
+    width: 60%;
+    left: 10px;
+    color: aliceblue;
+    line-height: 30px;
+}
+
+.about-nav{
+    font-size: 20px;
+    padding: 20%;
+    color: red;
+    width: 50%;
+}
+
+.about-nav li{
+    padding: 10px;
+}
+.about-head {
+    width: 30%;
+}
+.second-con{
+    background-color:#FAFAFA;
+    padding: 5%;
+ 
+    display: flex;
+}
+.second-con i{
+    color: red;
+}
+.second-con p{
+    color: black;
+}
+.second-con img{
+    /* z-index: 0; */
+    margin-left: -150px; 
+}
+.second-con i{
+    padding: 1%;
+}
+.time{
+    display: flex;
+   align-items: center;
+   margin: 5%;
+  
+}
+.third-con{
+    
+    margin-top: -14%;
+   
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+
+}
+.curve{
+    background-image: linear-gradient(rgba(31, 71, 232, 0.666),rgb(0, 0, 0)), url(./assets/img/grad.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-top-right-radius: 90%;
+    height: auto;
+ 
+    width: 120%;
+}
+.curve-con{
+    padding: 5% ;
+    display: flex;
+    width: 70%;
+      position: inherit;
+
+}
+.curve-con img{
+    width: 30%;
+    margin-left: 20%;
+ 
+}
+.curve-con h2{
+    color: red;
+}
+.curve-con p{
+    color: aliceblue;
+    line-height: 40px;
+}
+
+@media  (min-width: 350px) and (max-width:950px) {
+    .first-con{
+        margin: 5%;
+        display: block;
+        justify-content:space-around;
+    }
+    .first-con h1{
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .side-text{
+        width: 100%;
+        left: 10px;
+        color: aliceblue;
+        line-height: 30px;
+        padding-bottom: 10%;
+    }
+    .second-con{
+        margin: 0 auto;
+      justify-content: center;
+     
+        display: block;
+    }
+    .second-con img{
+   margin: 0 auto;
+    }
+    .curve-con{
+        padding-top: 10%;
+        display: block;
+    }
+    .curve-con img{
+        display: none;
+    }
+    .curve{
+        border-top-right-radius: 70%;
+    }
+    
+}
